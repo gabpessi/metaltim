@@ -755,9 +755,9 @@ Large: 1.8
 
 .btn-enviar {    
     width: 41.2rem;
+    height: 7rem;
     font-size: 2.4rem;
-    font-weight: 700;
-    padding: 1.5rem 4rem;
+    font-weight: 700;    
     border-radius: 11px;
     border: 2px solid transparent;
     color: #ae1f23;
@@ -878,6 +878,8 @@ Large: 1.8
     margin-bottom: 0;
     line-height: 1;
     font-size: 1.4rem;  
+    text-decoration: none;
+    color: #fff;
     
 }
 
@@ -1151,12 +1153,24 @@ Large: 1.8
         font-size: 40%;
     }
 
+    .header {
+        padding: 2.5rem 1rem;
+    }
+
     .titulo-hero {
-        font-size: 7rem;
+        font-size: 6.8rem;
     }
 
     .subtitulo-hero {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        justify-content: center;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
     }
 
     .setor-img {
@@ -1191,3 +1205,9 @@ Large: 1.8
         padding: 0;
     }
     }
+
+    @media (max-width: 25em) {
+        html {
+            font-size: 35%;
+        }
+     }
