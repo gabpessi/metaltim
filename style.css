@@ -56,6 +56,15 @@ Large: 1.8
   }
 
 
+  .no-link {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
 
 .container {
     max-width: 132rem;
@@ -805,6 +814,12 @@ Large: 1.8
 }
 
 
+.footer-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footers {
     align-self: center;
 }
@@ -910,6 +925,59 @@ Large: 1.8
 .footer-direitos img {
     width: 5rem;
 }
+
+.container-obrigado {
+    background-color: #ae1f23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;        
+    text-align: center;
+}
+
+
+.obrigado {
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #fff;
+    width: 90vw;
+    height: 90vh;
+    
+}
+
+.obrigado i {
+    font-size: 10rem;    
+    color: green;
+}
+
+.obrigado h1 {
+    font-size: 4rem;
+   
+}
+
+.obrigado p {
+    font-size: 1.8rem;
+}
+
+.btn-obrigado {
+    margin: 2rem;
+    color: #fff;
+    padding: 1.2rem 4rem;
+    background-color: #ae1f23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 11px;
+
+}
+
 
 
 @media (max-width: 85em) {
@@ -1204,6 +1272,10 @@ Large: 1.8
     .sobrenos-textos {
         padding: 0;
     }
+    }
+
+    .footer-content {
+        padding: 15rem 10rem;
     }
 
     @media (max-width: 25em) {

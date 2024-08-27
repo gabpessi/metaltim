@@ -93,28 +93,30 @@
             </div>
           </div>
           <div class="contact-form">
-            <form>                
+            <form action="https://api.web3forms.com/submit" method="POST">    
+              <input type="hidden" name="access_key" value="e70babb9-ff19-4ebf-ac5e-b1ee29aec22a">            
               <div class="inputBox">
                 <span>Nome</span> 
-                <input type="text" name="" required="required">
+                <input type="text" name="Nome" required="required">
                        
               </div>
               <div class="inputBox">
                 <span>Email</span>  
-                <input type="text" name="" required="required">
+                <input type="text" name="Email" required="required">
                       
               </div>
               <div class="inputBox">
                 <span>Telefone</span> 
-                <input type="text" name="" required="required">                         
+                <input type="text" name="Telefone" required="required">                         
               </div>
               <div class="inputBox">
                 <span>Escreva sua mensagem</span> 
-                <textarea required="required"></textarea>
-                       
+                <textarea name="Mensagem" required="required"></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">         
               </div>
               <div class="enviar">
-                <input class="btn-enviar" type="submit" name="" value="Enviar">
+                <input  type="hidden" name="redirect" value="https://gabpessi.github.io/metaltim/obrigado.html">
+                <button class="btn-enviar" type="submit">Enviar</button>
               </div>
             </form>
           </div>
@@ -146,8 +148,8 @@
             <div class="footer-direita footers">
               
               <h3>Rua Mauro Augusto Knoch, 87 <br> Timbó - SC - Brasil<br> CEP: 89120-000</h3>
-              <p>+55 (47) 3399-0675</p>
-              <p>+55(47) 99159-6994</p>
+              <p><span class="no-link">+55 (47) 3399-0675</span></p>
+              <p><span class="no-link">+55(47) 99159-6994</span></p>
               <p>diretoria@metaltim.com.br</p>        
               <p class="frase-footer">Nosso compromisso é com a precisão, durabilidade e eficiência, garantindo resultados
                 superiores em cada projeto.</p>
