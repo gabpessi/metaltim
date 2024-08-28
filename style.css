@@ -984,6 +984,19 @@ Large: 1.8
     html {
         font-size: 50%;
     }
+
+    .titulo-hero {
+        font-size: 6rem;
+    }
+
+    .subtitulo-hero {
+        font-size: 2.4rem;
+    }
+
+    .btn {
+        font-size: 2.2rem;
+    }
+    
 }
 
 
@@ -992,10 +1005,16 @@ Large: 1.8
         font-size: 45%;
     }
 
+
+
+    
+
 }   
 
 
-@media (max-width: 60em) {    
+@media (max-width: 62em) {    
+
+    
 
     .btn-mobile-nav {
         display: block;
@@ -1228,6 +1247,8 @@ Large: 1.8
     .titulo-hero {
         font-size: 6.8rem;
     }
+
+    
 
     .subtitulo-hero {
         font-size: 2.2rem;
