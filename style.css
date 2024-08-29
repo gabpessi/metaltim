@@ -980,7 +980,7 @@ Large: 1.8
 
 
 
-@media (max-width: 85em) {
+@media (max-width: 120em) {
     html {
         font-size: 50%;
     }
@@ -1006,13 +1006,24 @@ Large: 1.8
     }
 
 
+    .titulo-hero {
+        font-size: 6rem;
+    }
 
+    .subtitulo-hero {
+        font-size: 2.4rem;
+    }
+
+    .btn {
+        font-size: 2.2rem;
+    }
+    
     
 
 }   
 
 
-@media (max-width: 62em) {    
+@media (max-width: 60em) {    
 
     
 

@@ -27,7 +27,7 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 const scrollAmount = () => {
     const galleryWidth = scrollContainer.clientWidth;
-    return galleryWidth / 1; // Adjust the scroll amount based on gallery width
+    return galleryWidth;
 };
 
 nextBtn.addEventListener("click", () => {
