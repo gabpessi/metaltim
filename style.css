@@ -56,13 +56,9 @@ Large: 1.8
   }
 
 
-  .no-link {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  .no-link {    
+    color: inherit;
+    text-decoration: none;
   }
 
 
@@ -992,10 +988,7 @@ Large: 1.8
     .subtitulo-hero {
         font-size: 2.4rem;
     }
-
-    .btn {
-        font-size: 2.2rem;
-    }
+    
     
 }
 
@@ -1304,11 +1297,19 @@ Large: 1.8
     .sobrenos-textos {
         padding: 0;
     }
+
+    .produtos .img1 {
+        width: 44rem;
+    }
+
+    .produtos .img2 {
+        width: 40rem;
     }
 
     .footer-content {
         padding: 15rem 10rem;
     }
+}   
 
     @media (max-width: 25em) {
         html {
