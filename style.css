@@ -41,7 +41,7 @@ Large: 1.8
     /* font-size: 10px; */  
     /* 10px / 16px = 0.625 = 62.5% */
 
-    font-size: 62.5%;
+    font-size: 50%;
     overflow-x: hidden;
     
   
@@ -61,6 +61,10 @@ Large: 1.8
     text-decoration: none;
   }
 
+
+  .hidden {
+    display: none;
+  }
 
 .container {
     max-width: 132rem;
@@ -143,7 +147,7 @@ Large: 1.8
 
 .titulo-hero {
     color: #fff;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -5px;
@@ -152,11 +156,12 @@ Large: 1.8
     
 }
 
+
 .subtitulo-hero {
     max-width: 64rem;
     padding-top: 3rem;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2.4rem;
     line-height: 1
 }
 
@@ -541,8 +546,26 @@ Large: 1.8
 
 
  /* CARROSEL CLIENTES ////////// */
+
+ .clientes-titulo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    /* background-image: linear-gradient(#ae1f23, 60%, #393536) */
+}
+
+.clientes-titulo h1 {
+    color: #ae1f23;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    padding: 3rem 1rem;
+    letter-spacing: -1px;
+}
+
  .clientes {
-    background-color: #8d2427;
+    background-color: #ae1f23;
     padding: 8rem 0;
 }
 
@@ -569,7 +592,7 @@ Large: 1.8
 }
 
 .gallery div img {
-    width: 40rem
+    width: 30rem
 }
 
 .gallery::-webkit-scrollbar {
@@ -600,24 +623,22 @@ Large: 1.8
 
 /* CONTATO */
 .contato-hero {
-    position: relative;    
+    background-image: url(img/contato/hero-contato-img-jpg.jpg);    
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;   
     display: flex;
     width: 100%;
-    min-height: 100vh;    
+    height: 100vh;   
     align-items: center;
     justify-content: end;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;    
 }
 
-.contato-hero-img {
+
+.contato-full-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;   
-    
+    height: auto;
 }
 
 
@@ -634,7 +655,7 @@ Large: 1.8
 .titulo-contato-hero {    
     
     color: #ae1f23;
-    font-size: 9rem;
+    font-size: 8rem;
     font-weight: 900;
     text-transform: uppercase;
     
@@ -645,7 +666,7 @@ Large: 1.8
 
 .subtitulo-contato-hero {
     color: #ae1f23;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
     font-weight: 400;
     padding-top: 3rem
@@ -659,7 +680,7 @@ Large: 1.8
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #fff;   
+      
     
 }
 
@@ -796,6 +817,18 @@ Large: 1.8
 .mapa {
     margin: 0 auto;
     padding: 3rem 0 0 0;
+}
+
+
+/* SERVICOS //////////////*/
+
+.servicos-hero {
+    width: 100%;
+    height: 100vh;    
+    background-image: url(img/serviços/serviços-hero-img.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;   
 }
 
 
@@ -976,21 +1009,6 @@ Large: 1.8
 
 
 
-@media (max-width: 120em) {
-    html {
-        font-size: 50%;
-    }
-
-    .titulo-hero {
-        font-size: 6rem;
-    }
-
-    .subtitulo-hero {
-        font-size: 2.4rem;
-    }
-    
-    
-}
 
 
 @media (max-width: 70em) {
@@ -1010,14 +1028,21 @@ Large: 1.8
     .btn {
         font-size: 2.2rem;
     }
-    
+
+   
     
 
 }   
 
 
-@media (max-width: 60em) {    
-
+@media (max-width: 60em) { 
+    
+    .contato-hero {
+        background: #fff;
+        height: 100%;
+        padding: 10rem 0;
+        
+    }    
     
 
     .btn-mobile-nav {
@@ -1118,8 +1143,12 @@ Large: 1.8
 
     
 
-    .hero-content, .contato-hero-content, .sobrenos-hero-content {
+    .hero-content, .sobrenos-hero-content {
         z-index: -1;
+    }
+
+    .hidden {
+        display: block;
     }
 
     .main-nav-link:link, .main-nav-link:visited {
@@ -1144,7 +1173,7 @@ Large: 1.8
     
     .gallery div {
         grid-template-columns: 1fr; /* 1 column for screens < 800px */
-        
+        row-gap: 4rem
     }
     
     #backBtn, #nextBtn { 
@@ -1311,7 +1340,7 @@ Large: 1.8
     }
 }   
 
-    @media (max-width: 25em) {
+    @media (max-width: 27em) {
         html {
             font-size: 35%;
         }
