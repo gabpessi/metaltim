@@ -565,7 +565,7 @@ Large: 1.8
 }
 
  .clientes {
-    background-color: #ae1f23;
+    background-color: #8d2427;
     padding: 8rem 0;
 }
 
@@ -822,14 +822,45 @@ Large: 1.8
 
 /* SERVICOS //////////////*/
 
-.servicos-hero {
+.servicos-hero, .produtos-hero {
     width: 100%;
-    height: 100vh;    
-    background-image: url(img/serviços/serviços-hero-img.jpg);
+    height: 100vh;        
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10rem;
+    flex-direction: column;
 }
+
+.servicos-hero {
+    background-image: url(img/serviços/serviços-hero-img.jpg);
+}
+
+.produtos-hero {
+    background-image: url(img/produtos/produtos-hero-img.jpg);
+}
+
+
+.servicos-hero h2, .produtos-hero h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    
+}
+
+.servicos-hero h1, .produtos-hero h1 {
+    font-size: 10rem;
+}
+
+
+.servicos-hero h2, .servicos-hero h1, .produtos-hero h2, .produtos-hero h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin: -10px;
+}
+
 
 
 /* FOOTER /////////////// */
